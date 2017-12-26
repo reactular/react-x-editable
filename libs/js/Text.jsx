@@ -44,10 +44,10 @@ export default class Text extends Component {
           onChange={this.setValue.bind(this)}
           onBlur={this.onBlur.bind(this)}
           onKeyDown={this.handleKeyDown.bind(this)}
+          autoFocus
         />
         <HelpBlock key={"HelpBlock"+this.props.name}>{this.props.validation.msg}</HelpBlock>
       </FormGroup>
-
     );
   }
 }
